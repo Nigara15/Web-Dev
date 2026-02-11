@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fit-zone-your fitness journey starts here</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: write;
+        }
+        #header{
+            color:write;
+            background: #1b1b2f;
+            display:flex;
+            justify-content: space-between;
+            padding:20px 40px;
+            align-items: center;
+        }
+        #header ul{
+            list-style: none;
+            display:flex;
+            gap:20px;
+            margin:0;
+            padding:0;
+        }
+        #header a{
+            color:write;
+            text-decoration:none;
+        }
+        #header a:hover{
+            text-decoration:underline;
+            color:#e94560;
+        }
+        #hero{
+            background:linear-gradient(to right, #16213e, #1b1b2f);
+            display:flex;
+            padding:80px 20px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        #hero form{
+            margin-top:20px;
+            gap:15px;
+            display:flex;
+            flex-direction: column;
+        }
+        #hero input,#hero select{
+            width:300px;
+            padding:30px;
+            border-radius:6px;
+            border:none;
+        }
+        #hero button{
+            background:#e94560;
+            color:write;
+            border:none;
+            padding:12px;
+            border-radius:20px;
+            font-weight:bold;
+            cursor:pointer;
+        }
+        #hero button:hover{
+            background-color:#ff5c77;
+        }
+        #classes{
+            padding:60px 40px;
+        }
+        .class-grid {
+            display: grid;
+            grid-template-columns:repeat(3,1f);
+            gap:20px;
+        }
+        .class-card{
+            background:write;
+            padding:15px;
+            border-radius:8px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+        .class-grid img{
+            width:100%;
+            border-radius:8px;
+        }
+        .level{
+            display:inline-block;
+            padding:5px 10px;
+            border-radius:20px;
+            color:write;
+            font-size:12px;
+        }
+        .beginner{
+            background: green;
+        }
+        .advanced{
+            background: red;
+        }
+        .intermediate{
+            background: orange;
+        }
+        .pricing{
+
+        }
+    </style>
+</head>
+<body>
+<header id="header">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Trainers</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="hero">
+    <h2>Transform Your Body, Transform Your Life </h2>
+    <p>frgrt gtreryh erhyyhte</p>
+    <form>
+        <label>Full name</label>
+        <input type="text" placeholder="Your name">
+        <label>Email</label>
+        <input type="email" placeholder="Your email">
+        <label>Membership type</label>
+        <select>
+            <option>Basic</option>
+            <option>Pro</option>
+            <option>Elite</option>
+        </select>
+        <button>Join now</button>
+    </form>
+</section>
+<section id="classes">
+    <h2>our classes</h2>
+    <div class="class-grid">
+        <img src="https://via.placeholder.com/300x180">
+        <h3>Yoga</h3>
+        <p>mon-wed</p>
+        <span class="lever beginner">Beginner</span>
+    </div>
+    <div class="class-grid">
+        <img src="https://via.placeholder.com/300x180">
+        <h3>Crossfit</h3>
+        <p>mon-wed</p>
+        <span class="lever advanced">advanced</span>
+    </div>
+    <div class="class-grid">
+        <img src="https://via.placeholder.com/300x180">
+        <h3>pilates</h3>
+        <p>mon-wed</p>
+        <span class="lever intermediate">intermediate</span>
+    </div>
+    <div class="class-grid">
+        <img src="https://via.placeholder.com/300x180">
+        <h3>hiit</h3>
+        <p>mon-wed</p>
+        <span class="lever beginner">Beginner</span>
+    </div>
+    <div class="class-grid">
+        <img src="https://via.placeholder.com/300x180">
+        <h3>spinning</h3>
+        <p>mon-wed</p>
+        <span class="lever advanced">advanced</span>
+    </div>
+</section>
+<section id="pricing">
+    <h2>membership plans</h2>
+    <div class="plans">
+        <div class="plan-card">
+            <h3>Basic</h3>
+            <p class="price">5,000 ₸/month</p>
+            <ul>
+                <li>Access to gym</li>
+                <li>locker room</li>
+            </ul>
+        </div>
+        <div class="plan-card">
+            <h3>Pro</h3>
+            <p class="price">9,000 ₸/month</p>
+            <ul>
+                <li>gym floor</li>
+                <li>all group classes</li>
+                <li>sauna</li>
+            </ul>
+        </div>
+        <div class="plan-card">
+            <h3>Elite</h3>
+            <p class="price">15,000 ₸/month</p>
+            <ul>
+                <li>all pro benefits</li>
+                <li>personal trainer</li>
+                <li>nutrition plan</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+<footer id="footer">
+    © 2026 FitZone. All Rights Reserved.
+    <p href="#">Privacy Policy</p>
+    <p>
+        <a href="#">Instagram</a>
+        <a href="#">Youtube</a>
+        <a href="#">Telegram</a>
+    </p>
+</footer>
+</body>
+</html>
