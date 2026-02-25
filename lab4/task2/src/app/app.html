@@ -1,2 +1,15 @@
 <h1>Online Store</h1>
-<app-product-list></app-product-list>
+<div class="categories">
+  <button
+    *ngFor="let category of categories"
+    (click)="selectCategory(category.id)">{{category.name}}</button>
+</div>
+<div *ngIf="selectCategoryId;else noCategory">
+  <app-product-list
+    [products]="selectedProducts">
+  </app-product-list>
+</div>
+<ng-template #noCategory>
+  <p>Please select a category</p>
+</ng-template>
+
